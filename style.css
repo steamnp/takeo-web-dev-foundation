@@ -1,0 +1,13 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+body{
+  background: #0a13b4;
+  color:white;
+}
+h1{
+text-align: center;
+
+}
