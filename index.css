@@ -14,4 +14,20 @@ margin: 20px;
 padding: 25px;
 border: 10px solid black;
 }
+body {
+    height: 100%;
+}
+.outer {
+background-color: blueviolet;
+height: 100px;
+display: grid;
+}
+.first {
+    height: 20px;
+    background-color: red;
+    }
+.second {
+        height: 20px;
+        background-color: green;
+        }
 
