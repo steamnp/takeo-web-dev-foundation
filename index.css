@@ -1,0 +1,15 @@
+/* CSS Rule */
+
+/* h1 -> css selector */
+/* color -> css property */
+/* red -> css value */
+/* color: red; -> css declaration */
+/* h1 {
+  color: red;
+} -> CSS Rule */
+
+h1 {
+  color: white;
+  background-color: blue;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
