@@ -1,0 +1,14 @@
+  header{
+    text-align: center;
+}
+h1 {
+    box-sizing: border-box;
+    color: white;
+    background-color: #0a13b4;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    /* margin-top: 50px; */
+    margin-bottom: 0;
+    padding 0;
+    border: 10px solid black;
+    height: 200px;
+  }
