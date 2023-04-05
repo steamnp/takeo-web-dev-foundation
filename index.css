@@ -23,10 +23,14 @@ body {
   height: 100%;
 }
 
+/* Add display flex to parent container */
+
 #outer {
   background-color: red;
   height: 100px;
-  display: grid;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .first {
@@ -37,4 +41,28 @@ body {
 .second {
   height: 20px;
   background-color: blue;
+}
+
+.number {
+  height: 200px;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  height: 100px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-box {
+  height: 60px;
+  width: 60px;
+  background-color: red;
+  border-radius: 30px 0px 0px 30px;
 }
