@@ -23,20 +23,18 @@ body {
   height: 100%;
 }
 
-h1 {
-  color: white;
-  background-color: blue;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  /* margin-top: 50px; */
-  margin-bottom: 0;
-  padding-left: 20px;
-  padding-top: 100px;
-  border: 10px solid black;
-  height: 200px;
+#outer {
+  background-color: red;
+  height: 100px;
+  display: grid;
 }
 
-/* CSS Box Model */
-/* Content */
-/* Padding */
-/* Border */
-/* Margin */
+.first {
+  height: 20px;
+  background-color: green;
+}
+
+.second {
+  height: 20px;
+  background-color: blue;
+}
