@@ -1,5 +1,17 @@
+*{
+    box-sizing: border-box;
+    margin: o;
+}
+htm,
+body{
+    height: 100%;
+}
 h1 {
     color: brown;
     background-color: antiquewhite;
     font-family: Arial, Helvetica, sans-serif;
+margin: 20px;
+padding: 25px;
+border: 10px solid black;
 }
+
