@@ -7,9 +7,23 @@
 /* h1 {
     color: red;
 } -> CSS Rule */
+/* CSS reset */
+*{
+  box-sizing: border-box;
+}
 
 h1 {
   color: red;
   background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; block;    
+  margin-top: 50px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  border: 10px solid black;
 }
+
+/* CSS Box Model */
+/* Content */
+/* Padding */
+/* Border */
+/* Margin */
