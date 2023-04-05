@@ -8,8 +8,35 @@
   color: red;
 } -> CSS Rule */
 
+/* CSS reset */
+*,
+::before ::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 h1 {
   color: white;
   background-color: blue;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  /* margin-top: 50px; */
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-top: 100px;
+  border: 10px solid black;
+  height: 200px;
 }
+
+/* CSS Box Model */
+/* Content */
+/* Padding */
+/* Border */
+/* Margin */
