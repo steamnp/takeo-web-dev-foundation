@@ -1,32 +1,57 @@
-#box {
-  background-color: #0a13b4;
-  height: 400px;
-  width: 600px;
-  border-radius: 10%;
-  box-shadow: 1px 1px 10px red;
+* {
+  color: black;
+  background-color: lightgreen;
+}
+.grid {
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1px;
+  grid-auto-rows: 200px;
+  background-color: lightblue;
+  color: purple;
+  text-align: center;
+}
+.heading {
+  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  color: blue;
 }
 .one {
-  height: 200px;
-  width: 50px;
-  background-color: yellow;
-  text-align: center;
+  background-color: pink;
 }
 .two {
-  height: 200px;
-  width: 50px;
-  background-color: pink;
-  text-align: center;
+  background-color: yellow;
 }
 .three {
-  height: 200px;
-  width: 50px;
-  background-color: #fff;
+  background-color: greenyellow;
+}
+.four {
+  background-color: green;
+}
+.five {
+  background-color: pink;
+}
+.six {
+  background-color: red;
   text-align: center;
 }
-h1 {
-  color: Purple;
+.p {
+  background-color: pink;
+}
+.p2 {
+  background-color: greenyellow;
+}
+.banana-text {
+  background-color: yellow;
+}
+.footer {
   text-align: center;
+  padding: 5px 10px;
+  background-color: blue;
+  color: white;
+}
+.ford {
+  background-color: red;
 }

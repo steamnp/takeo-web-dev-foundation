@@ -4,15 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wed Development Foundation</title>
+    <title>Task 2 : Advance Boxes</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>FlexBox Example</h1>
-    <div id="box">
-      <div class="one">1</div>
-      <div class="two">2</div>
-      <div class="three">3</div>
+    <!-- 
+     -->
+    <div class="header">
+      <h1>Car Brands</h1>
     </div>
+    <br /><br />
+    <p>
+      There are hundreds of car manufacturing companies across the globe. In
+      this webpage, we will list some of the most popular car companies
+    </p>
+
+    <div class="grid">
+      <div class="one">
+        Toyota
+        <p class=></p>
+        <br />
+        <img
+          src="https://global.toyota/pages/global_toyota/mobility/toyota-brand/emblem_ogp_001.png"
+          height="70px"
+          width="90px"
+        />
+      </div>
+      <div class="two">
+        Honda
+        <br /><br><br>
+        <img
+          src="data:image/png;base64,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""
+          width="90px"
+          height="70px"
+        />
+      </div>
+      <div class="three">
+        BMW
+        <p class="p2">Pineapple tastes good</p>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/2048px-BMW.svg.png"
+          height="100px"
+        />
+      </div>
+      <div class="four">
+        Tesla
+        <br /><br /><img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN0AAAB8CAMAAADaWkVjAAAAYFBMVEX///8AAADFxcX7+/v29vbr6+vc3NzKysry8vKEhIRHR0fS0tLk5OQwMDC4uLjW1tYgICB9fX0ODg47Ozubm5tVVVVAQECRkZFmZmalpaUoKCgUFBRvb2+wsLBOTk6Li4v7DDRbAAAE10lEQVR4nO2c6ZqrIAyGHRVxQaz7Umvv/y4PFK0bTDunttg8vr/mGakmLkn4ghrGwcHBwcEusF1EHCcKsLkC4yBwHIJcW7eRfwdFtC49r61yPw1PyY+M5BSmfl61sVfWNEK6TX6MZbvEzKqiOZ2lDqk5n5q0Kqnj2pZuJ6SgwKxj/49OrSni2gz2dSFtXLZ587JnA03elngXz6ONcJn+YmlyasIwTNOiKPw7RZGm7L+N4okUpCVGWl1EZt3KDTyneeuVWX2h5i00ItuyhieK/SWCaYDppc5KFnzSk9zDNjM13aUWrTpZ8CiYSRFz6Pn4wGKRE+FM+tSeu4p+OtDYhK5MSdKuyrD72n6DrM3T1TnzKfnkPVqtLlicUWebc2w5ZhYXywNUm+z7Ocz5kS8O2vbusZBzmZ9Bc9P9PyDo43+YX4P3HeSah+IwzfsOIj/y7aLVwXufeCuob5fww84ZBi5qdTqyESFOXzzjgEXQWbnM8wEZimtWTvPNv+yqLvDGtv8HLokwrT15muB44jpbnmJ70lVeTXFEXou724No5lX+o9L5yt2zrg9Gnf3Ky+heSk07iIvmt5JqJGbD46dGJk0RB9pLTWI+Z23PFT26cvOzYRKdziH1xCBk91dNqYmnRU3STS+yj01Ka3ZPh8q9NFrv0FJmURpTcq+ZjVZpejsMsSxC41R2pko9bvXYqwCYZ9F8SKb0LpsPjLJ8OcLT/Ogt3GvWMxaq9I4uhyJzfv10O8e4TCzyJNuJ0jtZyJicrObybtOfwbnXu5lss6X0TlrF3W/kynmv2c9iUxEJfflmpXfy4X2MpfrvyjtZxwxSnGyVUKY4GQ7b1EnvAn24tE0U9aEq38eKPSUt3VulyYt5xYZa4V2tGK9XCfsrpsK7j06330ak8C56/NMvwJEXo81OIv6LoE7qXb6XKdxr2PI6uv2q4KFGPqe76jZrI+SzhJ0l7P/mIvVuFzXyBmBZh+e0AxlvE4hMWQi1SiYbYq96HowCSMg0DFnC63QbtRmyhNc+/tmXIEsJUBKCfJYAY4bAkQlHUEImC5oS78CETMNYp/OTbpM2ZCUy/+S6TdqQdUNSput+K+s6GkoNzVmnBDgJoV8hMePjqxjeiLNcBpjCkIwEaBk0gUhGAmtZR0ORjATLlAApIaz763r74VuzbC+vmspfTTBfh3SGlBBWC1v0LkPZnrksFuo2Z2Pmslih25yNmSc8OJKRYN5eVjWVv5X5LAHSDIEzF47gSEaCuXAEqspk2NOUEELzzpq+PFHt8xXCF5i2l6E0lUemwhEkyUgwTQnQEoJh4HGWcIbSVB6ZCEegJCPBRDjK97dA8VUmwlELLiFMF6Eqlp1+NWN7GU5TeWQUjmBJRoJxESqMZadz3OEFJ9Xq8O/m7p1uQ97CIBxBk4wEQ0qAmBBG4QiaZCTAvXfwamjOIBxBk4wEqPcOWA+hxxXLNDuQ6W54LwFWU3lENGBhtV1HLkAlIwEFO0Pg3N5LAPMewhLCK80CZrpjKSGHKRn18F7CJz8u9VlisDMETgZUMhKYIHsIAwTsDIHDP2gBUIce+FF9ugIEvurTFSCIAScEPkuAOkPgYKCSkcBRfWEGBATMm8oyUAtTEBO4F7DzH4N/cRdwqcLc023AwcHBwYGKf7CmMQxQEgieAAAAAElFTkSuQmCC"
+          width="90px"
+          height="100px"
+        />
+      </div>
+      <div class="five">
+        Ferrari
+        <br /><br />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdM888xmWtDyMHrBUL5QdTRUCdsrZa_XczKM594cgr&s"
+          width="90px"
+          height="100px"
+        />
+      </div>
+      <div class="six">
+        Ford
+        <p class=" ford">Ford is most popular brand in NA</p>
+        <img
+          src="data:image/png;base64,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"
+          width="90px"
+          height="90px"
+        />
+      </div>
+    </div>
+    <br /><br />
+    <footer class="footer">
+      <p>
+        Author: Takeo. All rights reserved <br />
+        <a href="https://www.takeo.ai">www.Takeo.ai</a>
+      </p>
+    </footer>
   </body>
 </html>
