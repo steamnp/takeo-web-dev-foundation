@@ -1,12 +1,10 @@
-.box {
-  background-color: blue;
-  color: white;
-  width: 300px;
-  height: 200px;
-  border: 2px solid black;
-  padding: 20px;
-  margin: 30px;
-  border-radius: 10px 0 0 10px;
+.container {
   display: flex;
+  background-color: #0a13b4;
+  color: white;
+  width: 600px;
+  height: 400px;
+  border-radius: 10%;
   align-items: center;
+  box-shadow: 0px 0px 20px crimson;
 }
