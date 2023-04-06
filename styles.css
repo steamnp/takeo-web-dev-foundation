@@ -1,7 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background-color: #0a13b4;
+h1 {
   color: white;
+  text-align: center;
+  background-color: blue;
+  width: 300px;
+  height: 200px;
+  border: 2px;
+  padding: 20px;
+  margin: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+p {
+  color: Red;
+}
+* {
+  background-color: lightpink;
 }
