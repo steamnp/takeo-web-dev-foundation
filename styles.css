@@ -1,18 +1,32 @@
-h1 {
-  color: white;
-  text-align: center;
-  background-color: blue;
-  width: 300px;
+#box {
+  background-color: #0a13b4;
+  height: 400px;
+  width: 600px;
+  border-radius: 10%;
+  box-shadow: 1px 1px 10px red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one {
   height: 200px;
-  border: 2px;
-  padding: 20px;
-  margin: 30px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  width: 50px;
+  background-color: yellow;
+  text-align: center;
 }
-p {
-  color: Red;
+.two {
+  height: 200px;
+  width: 50px;
+  background-color: pink;
+  text-align: center;
 }
-* {
-  background-color: lightpink;
+.three {
+  height: 200px;
+  width: 50px;
+  background-color: #fff;
+  text-align: center;
+}
+h1 {
+  color: Purple;
+  text-align: center;
 }
