@@ -6,5 +6,3 @@ for (let i = 0; i < 1000; i++) {
 
 const container = document.querySelector('.container')
 container.innerHTML = htmlElement
-
-console.log(document.body)
