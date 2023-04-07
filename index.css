@@ -52,6 +52,7 @@
   }
 htm,
 body{
+    color: white;
     height: 100%;
     background-color: #0a13b4;
 }
