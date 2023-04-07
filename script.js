@@ -1,8 +1,35 @@
-let htmlElement = ''
+// Creating variable in javascript
+// use const keyword or let keyword
 
-for (let i = 0; i < 1000; i++) {
-  htmlElement += `<div class = "circle" style = background-color:${'#' + (((1 << 24) * Math.random()) | 0).toString(16).padStart(6, '0')}>${i + 1}</div>`
+// var -> do not use
+// in 2015 -> const, let
+
+// string
+let container = 'Nepal'
+
+// number
+const secondContainer = 100.1
+
+// array
+const thirdContainer = ['nepal', 30]
+
+// object
+const fourthContainer = {
+  countryName: 'Nepal',
+  populationInMillion: 30,
 }
 
-const container = document.querySelector('.container')
-container.innerHTML = htmlElement
+// To see output on browser (chrome) console
+console.log(container)
+console.log(secondContainer)
+console.log(thirdContainer)
+console.log(fourthContainer)
+
+console.log(container)
+
+container = 'USA'
+
+console.log(container)
+
+container = 'India'
+console.log(container)
