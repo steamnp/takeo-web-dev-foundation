@@ -1,7 +1,15 @@
-*{
-    margin:0;
-    padding:0;
-box-sizing:border-box;
-background-color: #0a13b4;
-color: white;
+.box{
+    display: flex;
+    background-color: blue;
+    width: 300px;
+    height: 200px;
+    border: 2px;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: 1opx;
+
+    
+    
 }
