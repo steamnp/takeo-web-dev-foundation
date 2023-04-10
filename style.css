@@ -1,16 +1,28 @@
-*{
-    margin: 0%;
+* {
+  margin: 0;
 }
-.container{
-    background-color: #0a13b4;
-    height: 600px;
-    width: 400px;
-    display: flexbox;
-    border-radius: 10%;
-    align-content: centers;
-    box-shadow: 0 0 0 2em #f4aab9, 0 0 0 4em #66ccff;
-    margin: 4em;
-    padding: 1em;
-    
-    
+* ::before::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.outer-box {
+  background-color: blue;
+  display: grid;
+  grid-template-rows: 40px 40px;
+  grid-template-columns: 40px 40px 40px;
+}
+.box1 {
+  background-color: red;
+}
+.box2 {
+  background-color: green;
+}
+.box3 {
+  background-color: yellow;
+}
+.box4 {
+  background-color: purple;
 }
