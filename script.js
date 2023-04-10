@@ -1,19 +1,36 @@
-// select password1 input and assign to passwordOne variable
-// select password2 input and assign to passwordTwo variable
+const obj = {
+  name: 'Gorakh',
+  favnumber: 7,
+  numbers: [1, 2, 3, 4],
+  favperson: {
+    names: ['jay', 'sanjay'],
+  },
+}
 
-// select toggle span and assign to toggle variable
-// select toggle2 input and assign to toggleTwo variable
+const countryName = 100
 
-// Attach event listener to toggle and toggleTwo
-const toggle = document.querySelector('.toggle')
+console.log(obj.favnumber)
 
-// When we click on eye Button, we need to able to see password
+// DOCUMENT Object Model
+console.dir(toggle)
 
-// click, onchange
-toggle.addEventListener('click', function () {
-  console.log('I am clicked!')
-})
-// callback function
-// A function without name: Anonymous function
+function add(a, b) {}
 
-// console.log(toggle)
+add(10, 20)
+
+// Data type in javascript
+// string
+// number
+// array
+// object
+// boolean
+// null
+// undefined
+// NaN
+// function
+
+// Primitive data type
+// string, number, null, undefined, boolean, NaN
+
+// non primitive data type
+// Object -> object, array, function
