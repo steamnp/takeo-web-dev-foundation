@@ -1,35 +1,37 @@
-// Creating variable in javascript
-// use const keyword or let keyword
+const firstNumber = 10
+const secondNumber = 20
 
-// var -> do not use
-// in 2015 -> const, let
-
-// string
-let container = 'Nepal'
-
-// number
-const secondContainer = 100.1
-
-// array
-const thirdContainer = ['nepal', 30]
-
-// object
-const fourthContainer = {
-  countryName: 'Nepal',
-  populationInMillion: 30,
+// If (Conditional) statement in javascript
+if (firstNumber > secondNumber) {
+  console.log('First number is greater than second number!')
+} else if (firstNumber < secondNumber) {
+  console.log('First number is less than second number!')
 }
 
-// To see output on browser (chrome) console
-console.log(container)
-console.log(secondContainer)
-console.log(thirdContainer)
-console.log(fourthContainer)
+// if() {
 
-console.log(container)
+// } else if() {
 
-container = 'USA'
+// }
 
-console.log(container)
+if (0) {
+  console.log('Running')
+}
 
-container = 'India'
-console.log(container)
+// Falsy values
+// 0, '', null, undefined, NaN, false
+
+// Function
+function add(a, b) {
+  return a + b
+}
+
+// Call a function
+const result = add(100, 49)
+const output = add(14, 15)
+// console.log(output)
+
+// Iteration
+for (let i = 1; i <= 10000; i = i + 2) {
+  console.log(i)
+}
