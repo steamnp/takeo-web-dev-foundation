@@ -1,36 +1,47 @@
-const obj = {
-  name: 'Gorakh',
-  favnumber: 7,
-  numbers: [1, 2, 3, 4],
-  favperson: {
-    names: ['jay', 'sanjay'],
-  },
+const numbers = [2, 1, 3, 4, 5]
+console.log(numbers[4])
+// We are trying to access element 4 from array block scope
+
+const numThree = 10
+
+// every value inside array are called 'element'
+// In Array each and every element are give index number: index number starts from 0
+
+const numbersObj = {
+  numTwo: 2,
+  numOne: 1,
+  numThree: 3,
+}
+// every value inside object are called value
+// In object each and every property are give name: property name
+
+console.log(numThree)
+// We are trying to access numThree from global scope
+
+console.log(numbersObj.numThree)
+// We are trying to access numThree from obj block scope
+
+if (true) {
+  // Block scope
+  const myName = 'Gorakh'
+
+  // Accessing global scope in block scope: Permitted
+  console.log(numThree)
 }
 
-const countryName = 100
+// we are console logging in global scope
+// console.log(myName)
 
-console.log(obj.favnumber)
+// accessing block scope from global scope in not permitted
 
-// DOCUMENT Object Model
-console.dir(toggle)
+function print() {
+  const age = 30
+  // Function Scope
+  console.log(numThree)
+}
 
-function add(a, b) {}
+if (true) {
+  console.log(age)
+}
 
-add(10, 20)
-
-// Data type in javascript
-// string
-// number
-// array
-// object
-// boolean
-// null
-// undefined
-// NaN
-// function
-
-// Primitive data type
-// string, number, null, undefined, boolean, NaN
-
-// non primitive data type
-// Object -> object, array, function
+print()
