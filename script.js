@@ -1,37 +1,24 @@
-const firstNumber = 10
-const secondNumber = 20
+const toggle = document.querySelector(".toggle");
+const input = document.querySelector("#passwordOne");
 
-// If (Conditional) statement in javascript
-if (firstNumber > secondNumber) {
-  console.log('First number is greater than second number!')
-} else if (firstNumber < secondNumber) {
-  console.log('First number is less than second number!')
-}
+toggle.addEventListener("click", function () {
+  if (input.type === "password") {
+    input.type = "text";
+    toggle.classList.remove("fa-eye");
+    toggle.classList.add("fa-eye-slash");
+  } else {
+    input.type = "password";
+    toggle.classList.remove("fa-eye-slash");
+    toggle.classList.add("fa-eye");
+  }
+});
 
-// if() {
-
-// } else if() {
-
-// }
-
-if (0) {
-  console.log('Running')
-}
-
-// Falsy values
-// 0, '', null, undefined, NaN, false
-
-// Function
-function add(a, b) {
-  return a + b
-}
-
-// Call a function
-const result = add(100, 49)
-const output = add(14, 15)
-// console.log(output)
-
-// Iteration
-for (let i = 1; i <= 10000; i = i + 2) {
-  console.log(i)
-}
+const toggle2 = document.querySelector(".toggle2");
+const input2 = document.querySelector("#passwordTwo");
+toggle2.addEventListener("click", function () {
+  if (input2.type === "password") {
+    input2.type = "text";
+  } else {
+    input2.type = "password";
+  }
+});
