@@ -1,28 +1,18 @@
-const arr = ['Nepal', 'USA', 'India']
+// functions in javascript
 
-// Imperative
-// for (let i = 0; i < arr.length; i++) {
-//   console.log(arr[i])
+// Function declaration
+// function add(numOne, numTwo) {
+//   return numOne + numTwo
 // }
 
-// for in loop will give index number of array
-// for (let index in arr) {
-//   console.log(index)
+// Function Expression
+// const add = function (numOne, numTwo) {
+//   return numOne + numTwo
 // }
 
-// Declarative (React follows this convention)
-// for of loop will give value of array elements
-// for (let country of arr) {
-//   console.log(country)
-// }
+// Arrow function
+const add = (numOne, numTwo) => numOne + numTwo
 
-const obj = {
-  firstStudent: 'Alex',
-  secondStudent: 'Gorakh',
-}
+const result = add(400, 200)
 
-for (let values of Object.keys(obj)) {
-  console.log(values)
-}
-
-console.log(Object.values(obj))
+console.log(result)
