@@ -1,13 +1,28 @@
-// 0, '', null, undefined, false, NaN
+const arr = ['Nepal', 'USA', 'India']
 
-// 'USA', 100, [1, 2], { a: 1 }
+// Imperative
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(arr[i])
+// }
 
-// || -> OR
-// && -> and
+// for in loop will give index number of array
+// for (let index in arr) {
+//   console.log(index)
+// }
 
-// OR (||) operator short circuits at truthy value
-// console.log(0 || '' || 'Hello' || 'World')
+// Declarative (React follows this convention)
+// for of loop will give value of array elements
+// for (let country of arr) {
+//   console.log(country)
+// }
 
-// AND (&&) operator short circuits at falsy value
-// console.log(10 && 5 && 30)
-// console.log(undefined || null)
+const obj = {
+  firstStudent: 'Alex',
+  secondStudent: 'Gorakh',
+}
+
+for (let values of Object.keys(obj)) {
+  console.log(values)
+}
+
+console.log(Object.values(obj))
