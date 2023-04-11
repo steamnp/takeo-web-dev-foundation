@@ -6,7 +6,6 @@ console.log(...arr);
 const countryNames = ["USA", "Nepal", "India", "China"];
 
 const [firstCountry, , ...restCountries] = countryNames;
-
 console.log(restCountries);
 const [, numberOne, numberTwo, ...remaining] = arr;
 console.log(numberOne);
