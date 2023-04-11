@@ -12,7 +12,3 @@ const [, numberOne, numberTwo, ...remaining] = arr;
 console.log(numberOne);
 console.log(numberTwo);
 console.log(remaining);
-
-console.log(numberOne);
-console.log(numberTwo);
-console.log(remaining);
