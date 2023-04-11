@@ -1,25 +1,26 @@
-const numbers = [2, 1, 3, 4, 5]
+console.dir(document)
+const passwordOne = document.getElementById('password1')
+console.log(passwordOne)
+// select password1 input and assign to passwordOne variable
+// select password2 input and assign to passwordTwo variable
 
-// const firstElement = number[0]
-// const secondElement = number[1]
+// select toggle span and assign to toggle variable
+// select toggle2 input and assign to toggleTwo variable
 
-// useState in React: Reaview this concept
-// Array Descturcuting
-const [firstElement, secondElement] = numbers
+// Attach event listener to toggle and toggleTwo
+const toggle = document.querySelector('.toggle')
+// document: => WEB API
 
-const numbersObj = {
-  numTwo: 2,
-  numOne: 1,
-  numThree: 3,
-}
+// When we click on eye Button, we need to able to see password
 
-// Object Descturcuting
-const { numOne, numThree } = numbersObj
+// click, onchange
+toggle.addEventListener('click', function () {
+  console.log('I am clicked!')
+})
+// callback function
+// A function without name: Anonymous function
 
-// console.log(numOne)
+// console.log(toggle)
 
-console.log(...numbers)
-
-// let arr = [5, 1, 8, 16]
-// arr.sort()
-// console.log(arr)
+// select submit button from HTML and attach event listener to it
+// check password and confirm password and display message
