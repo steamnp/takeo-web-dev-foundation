@@ -1,24 +1,13 @@
-// Spread Operator/Rest Parameter
+// 0, '', null, undefined, false, NaN
 
-const arr = [1, 2, 3, 4, 5, 6, 7]
-// Spread Operator
-// console.log(...arr)
+// 'USA', 100, [1, 2], { a: 1 }
 
-const countryNames = ['USA', 'Nepal', 'India', 'China']
+// || -> OR
+// && -> and
 
-// Rest Operator (parameter)
-const [firstCountry, , ...restCountries] = countryNames
-// console.log(restCountries)
-const [, numberOne, numberTwo, ...remaining] = arr
-// console.log(numberOne)
-// console.log(numberTwo)
-// console.log(remaining)
+// OR (||) operator short circuits at truthy value
+// console.log(0 || '' || 'Hello' || 'World')
 
-// Rest Operator (parameter)
-function print(x, ...a) {
-  console.log(x)
-  console.log(a)
-}
-
-// Spread Operator
-print(...arr)
+// AND (&&) operator short circuits at falsy value
+// console.log(10 && 5 && 30)
+// console.log(undefined || null)
