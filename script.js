@@ -1,26 +1,20 @@
-console.dir(document)
-const passwordOne = document.getElementById('password1')
-console.log(passwordOne)
-// select password1 input and assign to passwordOne variable
-// select password2 input and assign to passwordTwo variable
+// Spread Operator
 
-// select toggle span and assign to toggle variable
-// select toggle2 input and assign to toggleTwo variable
+const arr = [1, 2, 3, 4, 5, 6, 7]
+console.log(...arr)
 
-// Attach event listener to toggle and toggleTwo
-const toggle = document.querySelector('.toggle')
-// document: => WEB API
+// Rest Operator
+// will be used with descturturing and function parameter
 
-// When we click on eye Button, we need to able to see password
+// const [firstNumber] = arr
+// console.log(firstNumber)
 
-// click, onchange
-toggle.addEventListener('click', function () {
-  console.log('I am clicked!')
-})
-// callback function
-// A function without name: Anonymous function
+const countryNames = ['USA', 'Nepal', 'India', 'China']
 
-// console.log(toggle)
+const [firstCountry, , ...restCountries] = countryNames
 
-// select submit button from HTML and attach event listener to it
-// check password and confirm password and display message
+console.log(restCountries)
+
+// console.log(numberOne)
+// console.log(numberTwo)
+// console.log(remaining)
