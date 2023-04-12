@@ -1,25 +1,26 @@
-// Spread Operator
+console.log('before promise')
 
-const arr = [1, 2, 3, 4, 5, 6, 7];
-console.log(...arr);
+// const result = fetch('https://restcountries.com/v3.1/all')
+// .then((response) => {
+    // return response.json()
+// })
+// .then((countrydata) => {console.log(countrydata)})
 
-// Rest Operator
-// will be used with descturturing and function parameter
 
-// const [firstNumber] = arr
-// console.log(firstNumber)
 
-const countryNames = ["USA", "Nepal", "India", "China"];
+// handling or getting data from promise
+// 1. then method
+// 2.1 async await
 
-const [firstCountry, , ...restCountries] = countryNames;
+async function getCountry() {
+    const response = await fetch('https://restcountries.com/v3.1/all')
 
-console.log(restCountries);
+    const data = await response.json()
 
-// console.log(numberOne)
-// console.log(numberTwo)
-// console.log(remaining)
+    console.log(data)
+}
 
-const [, numberOne, numberTwo, ...remaining] = arr;
-console.log(numberOne);
-console.log(numberTwo);
-console.log(remaining);
+getCountry()
+
+console.log('after promise')
+ 
