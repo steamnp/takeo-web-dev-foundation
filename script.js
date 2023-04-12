@@ -1,25 +1,25 @@
 const name = 'Gorakh'
 
-// single processor or single thread -> call stack
+// const start = performance.now()
+// console.log(start)
 
-// Blocking code (Synchronous Code)
-// for (let i = 0; i < 100000; i++) {
+// Liner Time Complexity O(n)
+// for (let i = 0; i < 10000; i++) {
 //   console.log('Running Loop')
 // }
 
-console.log('Running before timer')
+// const end = performance.now()
+// console.log(end)
 
-// Asynchronous code
-// const interval = setInterval(() => {
-//   console.log('first interval')
-// }, 100)
+// // Template Literal
+// console.log(`${end - start}`)
 
-// setInterval(() => {
-//   clearInterval(interval)
-// }, 1000)
+// 100 -> 1
+// 1000 -> 19
+// 10000 -> 106
 
-for (let i = 0; i < 1000; i++) {
-  console.log('Running Loop')
-}
-
-console.log('Running after timer')
+// Constant Time Complexity O(1)
+const start = performance.now()
+console.log(100000000000)
+const end = performance.now()
+console.log(end)
