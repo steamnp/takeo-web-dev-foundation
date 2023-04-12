@@ -1,19 +1,32 @@
-// Exponential Time Complexity O(2^n)
-const start = performance.now()
-const myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 2]
+// Promise
+console.log('before promise')
 
-function generateSubsets(array) {
-  if (array.length === 0) {
-    return [[]]
+// then method -> 2015 (ES6)
+// const result = fetch('https://restcountries.com/v3.1/all')
+//   .then((response) => {
+//     return response.json()
+//   })
+//   .then((countryData) => {
+//     console.log(countryData)
+//   })
+
+// Handling (getting data) from promise
+// 1. then method
+// 2. async await
+
+// async await -> 2017 (ES8)
+async function getCountry() {
+  try {
+    console.log('Inside country function')
+    const response = await fetch('https://restcountries.com/v3.1/all')
+    const data = await response.json()
+
+    console.log(data)
+  } catch (error) {
+    console.log(error)
   }
-  const firstElement = array[0]
-  const remainingElements = array.slice(1)
-  const subsetsWithoutFirst = generateSubsets(remainingElements)
-  const subsetsWithFirst = subsetsWithoutFirst.map((subset) => [firstElement, ...subset])
-  return subsetsWithoutFirst.concat(subsetsWithFirst)
 }
 
-generateSubsets(myArray)
+getCountry()
 
-const end = performance.now()
-console.log(`${end - start}`)
+console.log('after promise')
