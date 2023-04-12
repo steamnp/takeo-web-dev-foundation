@@ -1,18 +1,25 @@
-// functions in javascript
+const name = 'Gorakh'
 
-// Function declaration
-// function add(numOne, numTwo) {
-//   return numOne + numTwo
+// single processor or single thread -> call stack
+
+// Blocking code (Synchronous Code)
+// for (let i = 0; i < 100000; i++) {
+//   console.log('Running Loop')
 // }
 
-// Function Expression
-// const add = function (numOne, numTwo) {
-//   return numOne + numTwo
-// }
+console.log('Running before timer')
 
-// Arrow function
-const add = (numOne, numTwo) => numOne + numTwo
+// Asynchronous code
+// const interval = setInterval(() => {
+//   console.log('first interval')
+// }, 100)
 
-const result = add(400, 200)
+// setInterval(() => {
+//   clearInterval(interval)
+// }, 1000)
 
-console.log(result)
+for (let i = 0; i < 1000; i++) {
+  console.log('Running Loop')
+}
+
+console.log('Running after timer')
