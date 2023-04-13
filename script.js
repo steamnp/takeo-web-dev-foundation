@@ -19,12 +19,16 @@ let apiQuotes = []
 const data = fetch('https://type.fit/api/quotes').then()
 console.log(data)
 
-// a and b are input of the function
-function add(a, b) {
-  const add = a + b
-  return add
+const firstNumber = 10
+const secondNumber = 20
+
+let result = 0
+
+// Side Effect (Avoid most of the time)
+function add() {
+  result = firstNumber + secondNumber
 }
 
-const result = add(10, 20)
+const output = add()
 
 console.log(result)
