@@ -13,22 +13,18 @@ let apiQuotes = []
 // https://type.fit/api/quotes
 
 // If you are using async await to consume promises -> use try catch block to handle errors
-// If you are using then method -> use catch function to handle errors
+// If you are using then method -> use catch function (method) at the end of last then method to handle errors
 
 // method -> function
-const data = fetch('https://type.fit/api/quotes').then()
-console.log(data)
+const data = fetch('https://type.fit/api/quotes')
+  .then((response) => {
+    return response.json()
+  })
+  .then((data) => {
+    console.log(data)
+  })
+  .catch((error) => {
+    console.log(error)
+  })
 
-const firstNumber = 10
-const secondNumber = 20
-
-let result = 0
-
-// Side Effect (Avoid most of the time)
-function add() {
-  result = firstNumber + secondNumber
-}
-
-const output = add()
-
-console.log(result)
+// fetch -> axios
