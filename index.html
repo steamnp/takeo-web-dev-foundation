@@ -2,30 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Quote Generator</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Confirm Passowrd Validation With JavaScript - Codingscape.</title>
+
+    <!-- Font Awesome CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+    <!--stylesheet-->
     <link rel="stylesheet" href="index.css" />
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
   </head>
   <body>
-    <div class="quote-container" id="quote-container">
-      <div class="quote-text">
-        <i class="fas fa-quote-left"> </i>
-        <span id="quote">This is the quote area</span>
+    <div class="container">
+      <h2>RESET A NEW PASSWORD</h2>
+      <span class="divider"></span>
+      <div class="input-form">
+        <div class="input-box">
+          <label for="password1">Password</label>
+          <input type="password" id="password1" class="input-field" placeholder="Enter password" />
+          <span class="toggle fa fa-eye"></span>
+        </div>
+        <div class="input-box">
+          <label for="password2">Confirm Password</label>
+          <input type="password" id="password2" class="input-field" placeholder="Enter password Again!" />
+          <span class="toggle2 fa fa-eye"></span>
+        </div>
+        <button class="input-btn">Submit</button>
       </div>
-      <div class="quote-author">
-        <span id="author">- Author</span>
-      </div>
-
-      <div class="button-container">
-        <button class="twitter-button" id="twitter" title="Tweet This!">
-          <i class="fab fa-twitter"></i>
-        </button>
-        <button id="new-quote">New Quote</button>
+      <div class="alert-box">
+        <p></p>
       </div>
     </div>
-    <!-- <div class="loader" id="loader"></div> -->
+
+    <!---script-->
+    <script src="script.js"></script>
   </body>
 </html>

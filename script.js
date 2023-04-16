@@ -1,30 +1,26 @@
-const quoteContainer = document.getElementById('quote-container')
-const quoteText = document.getElementById('quote')
-const authorText = document.getElementById('author')
-const twitterBtn = document.getElementById('twitter')
-const newQuoteBtn = document.getElementById('new-quote')
-const loader = document.getElementById('loader')
+console.dir(document)
+const passwordOne = document.getElementById('password1')
+console.log(passwordOne)
+// select password1 input and assign to passwordOne variable
+// select password2 input and assign to passwordTwo variable
 
-let apiQuotes = []
+// select toggle span and assign to toggle variable
+// select toggle2 input and assign to toggleTwo variable
 
-// Use async await to get quote data
-// update apiQuotes with your quote data
+// Attach event listener to toggle and toggleTwo
+const toggle = document.querySelector('.toggle')
+// document: => WEB API
 
-// https://type.fit/api/quotes
+// When we click on eye Button, we need to able to see password
 
-// If you are using async await to consume promises -> use try catch block to handle errors
-// If you are using then method -> use catch function (method) at the end of last then method to handle errors
+// click, onchange
+toggle.addEventListener('click', function () {
+  console.log('I am clicked!')
+})
+// callback function
+// A function without name: Anonymous function
 
-// method -> function
-const data = fetch('https://type.fit/api/quotes')
-  .then((response) => {
-    return response.json()
-  })
-  .then((data) => {
-    console.log(data)
-  })
-  .catch((error) => {
-    console.log(error)
-  })
+// console.log(toggle)
 
-// fetch -> axios
+// select submit button from HTML and attach event listener to it
+// check password and confirm password and display message
