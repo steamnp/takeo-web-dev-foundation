@@ -85,11 +85,10 @@ h2 {
 }
 
 .alert-box {
-  display: none;
   padding: 10px 15px;
   border-radius: 4px;
   margin-top: 8px;
-  background: #efefef;
+  background: #fff;
   font-weight: 500;
 }
 
