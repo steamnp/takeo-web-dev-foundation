@@ -38,6 +38,7 @@ h2 {
 }
 
 .input-box {
+  position: relative;
   padding: 8px 0px;
 }
 
