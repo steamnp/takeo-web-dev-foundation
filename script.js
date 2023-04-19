@@ -4,6 +4,7 @@ const authorText = document.getElementById("author");
 const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
 const loader = document.getElementById("loader");
+const quoteIcon = document.querySelector(".fa-quote-left");
 
 let apiQuotes = [];
 
@@ -43,15 +44,22 @@ function tweetQuote() {
 
 // Show loading spinner
 function showLoadingSpinner() {
-  loader.hidden = false;
-  quoteContainer.hidden = true;
+  loader.style.display = "block";
+  quoteText.style.display = "none";
+  authorText.style.display = "none";
+  quoteIcon.style.display = "none";
+  twitterBtn.style.display = "none";
+  newQuoteBtn.style.display = "none";
 }
 
-// Hide loading spinner
 function hideLoadingSpinner() {
   if (!loader.hidden) {
-    quoteContainer.hidden = false;
-    loader.hidden = true;
+    quoteText.style.display = "block";
+    authorText.style.display = "block";
+    quoteIcon.style.display = "inline";
+    twitterBtn.style.display = "inline-block";
+    newQuoteBtn.style.display = "inline-block";
+    loader.style.display = "none";
   }
 }
 
